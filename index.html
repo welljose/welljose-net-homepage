@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wellington Silva — Digital Experience Executive</title>
-  <meta name="description" content="Wellington Silva — Digital Experience Executive with 25+ years leading large-scale digital transformations in Brazil's top retailers and tech companies." />
+  <title>Wellington Silva — Executivo Digital & Palestrante</title>
+  <meta name="description" content="Wellington Silva — Executivo de Experiência Digital com 25+ anos liderando transformações em tecnologia, produto e customer experience no varejo e telecom." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
@@ -16,16 +16,23 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#hero" class="nav__logo">WJ</a>
-      <ul class="nav__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#sobre"      data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#palestras"  data-i18n="nav.speaking">Palestras</a></li>
+        <li><a href="#depoimentos" data-i18n="nav.testimonials">Depoimentos</a></li>
+        <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
+        <li><a href="#contato" class="nav__cta" data-i18n="nav.contact">Contato</a></li>
       </ul>
-      <button class="nav__burger" id="burger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__right">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
+          <span class="lang-sep">/</span>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+        <button class="nav__burger" id="burger" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -33,91 +40,147 @@
   <section class="hero" id="hero">
     <div class="hero__bg"></div>
     <div class="container hero__content">
-      <p class="hero__eyebrow">Digital Experience Executive</p>
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Gestão · Tecnologia · Experiência do Cliente</p>
       <h1 class="hero__name">Wellington<br /><span>Silva</span></h1>
-      <p class="hero__tagline">
-        25+ years building digital products, leading transformations,<br class="br-lg" />
-        and turning data into growth at Brazil's largest retailers.
+      <p class="hero__tagline" data-i18n="hero.tagline">
+        Com mais de 25 anos no mercado, conduzo equipes nas fronteiras da tecnologia,<br class="br-lg" />
+        customer experience e produtos digitais — do varejo às telecomunicações.
       </p>
       <div class="hero__badges">
-        <span class="badge">Ph.D. Candidate — FEA-USP</span>
-        <span class="badge">LinkedIn Top Voice</span>
-        <span class="badge">FIAP Lecturer</span>
+        <span class="badge" data-i18n="badge.phd">Doutorando FEA-USP</span>
+        <span class="badge" data-i18n="badge.voice">LinkedIn Top Voice</span>
+        <span class="badge" data-i18n="badge.fiap">Professor FIAP</span>
+        <span class="badge" data-i18n="badge.native">Digitalmente nativo desde 1997</span>
       </div>
       <div class="hero__actions">
-        <a href="#experience" class="btn btn--primary">See my work</a>
-        <a href="https://linkedin.com/in/welljose" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn</a>
+        <a href="#contato" class="btn btn--primary" data-i18n="hero.cta.contact">Vamos conversar</a>
+        <a href="#palestras" class="btn btn--outline" data-i18n="hero.cta.speaking">Temas de palestra</a>
+        <a href="https://linkedin.com/in/welljose" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
       </div>
     </div>
-    <div class="hero__scroll">
-      <span></span>
-    </div>
+    <div class="hero__scroll"><span></span></div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="container about__grid">
-      <div class="about__text">
-        <p class="section__label">About</p>
-        <h2 class="section__title">Empathetic leadership.<br />Data-driven execution.</h2>
-        <p>
-          I've been building digital things since 1997 — long before "digital transformation" was a buzzword.
-          Throughout my career I've led technical and product organizations at iconic Brazilian brands,
-          always at the intersection of technology, design, and business strategy.
-        </p>
-        <p>
-          My approach combines empathetic leadership that builds trust with a relentless focus on measurable outcomes:
-          revenue growth, cost reduction, customer satisfaction, and team excellence.
-        </p>
-        <p>
-          Currently researching <strong>Generative AI in Retail</strong> as a Ph.D. candidate at FEA-USP,
-          while teaching AI, Digital Product, and Phygital Retail at FIAP postgraduate programs.
-        </p>
-      </div>
-      <div class="about__stats">
-        <div class="stat">
-          <span class="stat__number">25+</span>
-          <span class="stat__label">Years of experience</span>
-        </div>
-        <div class="stat">
-          <span class="stat__number">70</span>
-          <span class="stat__label">Engineers led at Riachuelo</span>
-        </div>
-        <div class="stat">
-          <span class="stat__number">NPS +15</span>
-          <span class="stat__label">Customer satisfaction lift at AMARO</span>
-        </div>
-        <div class="stat">
-          <span class="stat__number">BRL 220K</span>
-          <span class="stat__label">Monthly cloud savings via FinOps</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section section--dark" id="experience">
+  <!-- SOBRE / PROPOSTA DE VALOR -->
+  <section class="section" id="sobre">
     <div class="container">
-      <p class="section__label">Experience</p>
-      <h2 class="section__title">Where I've made an impact</h2>
+      <p class="section__label" data-i18n="about.label">Sobre</p>
+      <h2 class="section__title" data-i18n="about.title">Combinação de skills técnicos,<br />de estratégia e de liderança.</h2>
+      <p class="section__intro" data-i18n="about.intro">
+        Estou no mundo de inovação e liderança há mais de 25 anos. Tenho conduzido equipes nas fronteiras da tecnologia,
+        customer experience e produtos digitais, em indústrias diversificadas como varejo, telecomunicações,
+        serviços, consultoria e educação.
+      </p>
+      <div class="pillars">
 
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 data-i18n="pillar.lead.title">Liderança</h3>
+          <p data-i18n="pillar.lead.text">Amplamente reconhecido por liderança empática, técnica e eficaz. Mais de 50 recomendações no LinkedIn de colaboradores e parceiros. Elevou NPS acima de 80 em múltiplas iniciativas de CX no varejo de moda.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 data-i18n="pillar.cx.title">Customer Experience</h3>
+          <p data-i18n="pillar.cx.text">Especialista em jornada do cliente, NPS e voz do consumidor. Reduziu contact rate de 51% para 13% em um ano na AMARO. Referência em CX no varejo omnichannel brasileiro.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3 data-i18n="pillar.product.title">Produtos Digitais</h3>
+          <p data-i18n="pillar.product.text">Mais de 100 projetos de tecnologia bem-sucedidos, impulsionando eficiência e crescimento. Top Product Management Voice no LinkedIn (novembro de 2023). Pioneiro em IA Generativa no varejo.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3 data-i18n="pillar.edu.title">Educação & Pesquisa</h3>
+          <p data-i18n="pillar.edu.text">Milhares de alunos treinados na FIAP, CommSchool e CS Academy. Mestrado Profissional em Empreendedorismo pela FEA-USP (2024). Doutorando pesquisando IA Generativa no varejo (2025–2029).</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="container stats-bar__grid">
+      <div class="stat-big">
+        <span class="stat-big__number">+25</span>
+        <span class="stat-big__label" data-i18n="stats.years">anos de experiência</span>
+      </div>
+      <div class="stat-big">
+        <span class="stat-big__number">+50K</span>
+        <span class="stat-big__label" data-i18n="stats.students">alunos e colaboradores treinados</span>
+      </div>
+      <div class="stat-big">
+        <span class="stat-big__number">+30</span>
+        <span class="stat-big__label" data-i18n="stats.companies">empresas atendidas</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PALESTRAS / SPEAKING TOPICS -->
+  <section class="section section--dark" id="palestras">
+    <div class="container">
+      <p class="section__label" data-i18n="speaking.label">Palestras & Workshops</p>
+      <h2 class="section__title" data-i18n="speaking.title">Temas que domino<br />e que transformam audiências.</h2>
+      <p class="section__intro" data-i18n="speaking.intro">Atuo como palestrante em eventos corporativos, universidades e conferências de tecnologia e varejo. Cada palestra combina pesquisa acadêmica com casos reais de grandes empresas brasileiras.</p>
+      <div class="topics" id="topics-grid"></div>
+      <div class="speaking__cta">
+        <a href="#contato" class="btn btn--primary" data-i18n="speaking.cta">Solicitar proposta de palestra</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section" id="depoimentos">
+    <div class="container">
+      <p class="section__label" data-i18n="testi.label">Depoimentos</p>
+      <h2 class="section__title" data-i18n="testi.title">O que dizem por aí</h2>
+      <p class="section__intro" data-i18n="testi.intro">São mais de 50 recomendações disponíveis no LinkedIn. Veja algumas delas abaixo.</p>
+      <div class="testimonials" id="testimonials-grid"></div>
+      <div class="testi__cta">
+        <a href="https://linkedin.com/in/welljose" target="_blank" rel="noopener" class="btn btn--outline" data-i18n="testi.cta">Ver todas no LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICAÇÕES -->
+  <section class="section section--dark" id="publicacoes">
+    <div class="container">
+      <p class="section__label" data-i18n="pubs.label">Publicações</p>
+      <h2 class="section__title" data-i18n="pubs.title">Pesquisa acadêmica<br />com aplicação prática.</h2>
+      <div class="pubs" id="pubs-grid"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section class="section" id="experiencia">
+    <div class="container">
+      <p class="section__label" data-i18n="exp.label">Experiência</p>
+      <h2 class="section__title" data-i18n="exp.title">Onde construí<br />resultados de verdade.</h2>
       <div class="timeline">
 
         <article class="timeline__item">
           <div class="timeline__meta">
-            <span class="timeline__date">2024 — Present</span>
+            <span class="timeline__date">2024 — atual</span>
             <span class="timeline__company">Riachuelo</span>
           </div>
           <div class="timeline__body">
-            <h3>Tech Director — eCommerce, CRM, Loyalty, Omnichannel & Marketing Systems</h3>
-            <p class="timeline__context">
-              One of Brazil's top 20 retailers · BRL 10B+ annual revenue · 70-member technical organization
-            </p>
+            <h3 data-i18n="job.riachuelo.role">Diretor de Tecnologia — eCommerce, CRM, Fidelidade, Omnichannel & Sistemas de Marketing</h3>
+            <p class="timeline__context" data-i18n="job.riachuelo.context">Top 20 varejistas do Brasil · +BRL 10B de receita anual · organização técnica de 70 pessoas</p>
             <ul>
-              <li>Rebuilt eCommerce tech foundation across six pillars (stability, architecture, data, automation, security, team), improving platform reliability and observability.</li>
-              <li>Established Architecture and Web Analytics departments from scratch.</li>
-              <li>Led the launch of <strong>Riachuelo Loyalty</strong> and the brand's debut on <strong>TikTok Shop</strong> — making it the first Brazilian top fashion retailer on social commerce.</li>
-              <li>Drove <strong>BRL 220K/month cloud cost reduction</strong> via FinOps; introduced DORA metrics and observability KPIs.</li>
+              <li data-i18n="job.riachuelo.l1">Reconstruiu a base tecnológica do eCommerce em seis pilares: estabilidade, arquitetura, dados, automação, segurança e time.</li>
+              <li data-i18n="job.riachuelo.l2">Liderou o lançamento do <strong>Riachuelo Fidelidade</strong> e a estreia na <strong>TikTok Shop</strong> — primeiro grande varejista de moda do Brasil no social commerce.</li>
+              <li data-i18n="job.riachuelo.l3">Reduziu custo de cloud em <strong>BRL 220K/mês</strong> via FinOps; implementou DORA metrics e KPIs de observabilidade.</li>
             </ul>
           </div>
         </article>
@@ -128,16 +191,12 @@
             <span class="timeline__company">AMARO</span>
           </div>
           <div class="timeline__body">
-            <h3>CTO (2023–2024) / Product Director (2021–2022) / Head of CX & Data (2017–2020)</h3>
-            <p class="timeline__context">
-              Pioneer D2C omnichannel retailer in Brazil · fashion, beauty & home
-            </p>
+            <h3 data-i18n="job.amaro.role">CTO (2023–24) / Diretor de Produto (2021–22) / Head de CX & Data (2017–20)</h3>
+            <p class="timeline__context" data-i18n="job.amaro.context">Varejista D2C omnichannel pioneiro no Brasil · moda, beleza e casa</p>
             <ul>
-              <li>Launched AMARO Marketplace with cashback, live shopping, PIX, and ship-from-store — achieving <strong>4.9 on App Store</strong> and <strong>4.5 on Google Play</strong>.</li>
-              <li>Implemented <strong>Generative AI with OpenAI APIs</strong>, boosting operational efficiency by <strong>35%</strong> and accelerating time-to-market (2023).</li>
-              <li>Integrated Amazon Recommendation API for personalization, driving higher engagement and conversion (2020).</li>
-              <li>Built Omnichannel CRM + Customer Support Cockpit: reduced contact rate from <strong>51% → 13%</strong>, raised proactive communication by <strong>60%</strong>.</li>
-              <li>Voice of the Customer program elevated NPS from <strong>67 → 82</strong>.</li>
+              <li data-i18n="job.amaro.l1">Lançou o AMARO Marketplace com cashback, live shopping, PIX e ship-from-store — <strong>4.9 na App Store</strong> e <strong>4.5 no Google Play</strong>.</li>
+              <li data-i18n="job.amaro.l2">Implementou <strong>IA Generativa com OpenAI APIs</strong>, aumentando eficiência operacional em <strong>35%</strong> (2023).</li>
+              <li data-i18n="job.amaro.l3">Construiu CRM Omnichannel + Cockpit de Atendimento: reduziu contact rate de <strong>51% → 13%</strong> e elevou o NPS de <strong>67 → 82</strong>.</li>
             </ul>
           </div>
         </article>
@@ -148,11 +207,10 @@
             <span class="timeline__company">Mutant</span>
           </div>
           <div class="timeline__body">
-            <h3>Customer Experience Consultant</h3>
+            <h3 data-i18n="job.mutant.role">Consultor de Customer Experience</h3>
             <ul>
-              <li>Led 8 experts improving self-service efficiency in a <strong>BRL 160MM/year</strong> operation.</li>
-              <li>Identified 150+ CX opportunities across IVR, SMS, apps, hotsites, and chatbots.</li>
-              <li>Defined roadmaps in collaboration with UI/VUI designers and agile squads.</li>
+              <li data-i18n="job.mutant.l1">Liderou 8 especialistas melhorando eficiência de autoatendimento em operação de <strong>BRL 160MM/ano</strong>.</li>
+              <li data-i18n="job.mutant.l2">Mapeou +150 oportunidades de CX em IVR, SMS, apps, hotsites e chatbots.</li>
             </ul>
           </div>
         </article>
@@ -163,39 +221,10 @@
             <span class="timeline__company">Nextel</span>
           </div>
           <div class="timeline__body">
-            <h3>Voice of Customer Manager</h3>
+            <h3 data-i18n="job.nextel.role">Gerente de Voz do Cliente</h3>
             <ul>
-              <li>Led 56 CX professionals, increasing NPS by <strong>9pp</strong>.</li>
-              <li>Created "ReSolutionary Attendance," training <strong>3K+ agents</strong> and reducing repeat calls by <strong>8pp</strong>.</li>
-              <li>Launched structured insight system tied to OKRs; collaborated with C-Level on 68 customer initiatives.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__date">2011 — 2013</span>
-            <span class="timeline__company">Contax / LIQ</span>
-          </div>
-          <div class="timeline__body">
-            <h3>Corporate Process Manager</h3>
-            <ul>
-              <li>Led 9 team members evaluating process maturity for <strong>87K+ employees</strong>.</li>
-              <li>Created an exclusive process maturity model mapping 62 critical B2B service deliverables.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__date">2002 — 2011</span>
-            <span class="timeline__company">DEDIC</span>
-          </div>
-          <div class="timeline__body">
-            <h3>Quality & ISO 9001 Manager</h3>
-            <ul>
-              <li>Led 27 team members building an excellence culture for <strong>25K employees</strong> at this Portugal Telecom organization.</li>
-              <li>Managed 17K+ pages in intranet knowledge bases; built research teams improving employee engagement by <strong>+29pp</strong> and B2B satisfaction by <strong>+11pp</strong>.</li>
+              <li data-i18n="job.nextel.l1">Liderou 56 profissionais de CX, aumentando o NPS em <strong>9pp</strong>.</li>
+              <li data-i18n="job.nextel.l2">Criou o "Atendimento ReSolucionário", treinando <strong>+3K agentes</strong> e reduzindo reincidência de chamadas em <strong>8pp</strong>.</li>
             </ul>
           </div>
         </article>
@@ -204,130 +233,129 @@
     </div>
   </section>
 
-  <!-- EDUCATION -->
-  <section class="section" id="education">
+  <!-- FORMAÇÃO -->
+  <section class="section section--dark" id="formacao">
     <div class="container">
-      <p class="section__label">Education</p>
-      <h2 class="section__title">Always learning</h2>
+      <p class="section__label" data-i18n="edu.label">Formação</p>
+      <h2 class="section__title" data-i18n="edu.title">Sempre aprendendo.</h2>
       <div class="edu__grid">
         <div class="edu__card edu__card--highlight">
           <span class="edu__year">2025–2029</span>
-          <h3>Ph.D. Candidate in Business Management</h3>
-          <p>FEA-USP (PPGA) · Researching Generative AI in Retail</p>
+          <h3 data-i18n="edu.phd.title">Doutorado em Administração de Empresas</h3>
+          <p data-i18n="edu.phd.sub">FEA-USP (PPGA) · Pesquisa: IA Generativa no Varejo</p>
         </div>
         <div class="edu__card edu__card--highlight">
           <span class="edu__year">2024</span>
-          <h3>Master of Science (MSc)</h3>
-          <p>FEA-USP · Research on D2C / DNVB Business Models</p>
+          <h3 data-i18n="edu.msc.title">Mestrado Profissional (MSc)</h3>
+          <p data-i18n="edu.msc.sub">FEA-USP · Pesquisa sobre modelos D2C / DNVB</p>
         </div>
         <div class="edu__card">
           <span class="edu__year">2019</span>
-          <h3>Design Sprint Nanodegree</h3>
+          <h3 data-i18n="edu.ds.title">Nanodegree em Design Sprint</h3>
           <p>Udacity</p>
         </div>
         <div class="edu__card">
           <span class="edu__year">2017</span>
-          <h3>Digital Product Leadership Program</h3>
+          <h3 data-i18n="edu.tera.title">Liderança em Produtos Digitais</h3>
           <p>Tera Global</p>
         </div>
         <div class="edu__card">
           <span class="edu__year">2012</span>
-          <h3>MBA in Business Management</h3>
+          <h3 data-i18n="edu.mba.title">MBA em Gestão Empresarial</h3>
           <p>Anhembi Morumbi</p>
         </div>
         <div class="edu__card">
           <span class="edu__year">2007</span>
-          <h3>Bachelor in Information Systems</h3>
+          <h3 data-i18n="edu.bsc.title">Bacharelado em Sistemas de Informação</h3>
           <p>FIA — Centro Superior Mário de Andrade</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section class="section section--dark" id="skills">
+  <!-- CONTEÚDO / YOUTUBE -->
+  <section class="section" id="conteudo">
     <div class="container">
-      <p class="section__label">Skills & Expertise</p>
-      <h2 class="section__title">What I bring to the table</h2>
-      <div class="skills__grid">
-
-        <div class="skill__group">
-          <h3>Technology</h3>
-          <ul>
-            <li>SaaS / In-house / Open-source decision frameworks</li>
-            <li>Cloud: AWS, Azure, Google Cloud</li>
-            <li>AI: OpenAI APIs, Generative AI, Amazon Recommendation</li>
-            <li>Databases: MySQL, Big Data tooling</li>
-            <li>BI, Visualization & Analytics</li>
-            <li>eCommerce platforms & architecture</li>
-          </ul>
+      <p class="section__label" data-i18n="content.label">Conteúdo</p>
+      <h2 class="section__title" data-i18n="content.title">Falando sobre digital,<br />CX e inovação.</h2>
+      <p class="section__intro" data-i18n="content.intro">Cortes e apresentações sobre digital, customer experience e startups em conferências e podcasts. Mais conteúdo na CS Academy, +Clientes Podcast, Amigos do CX e podcast Conexão Customer.</p>
+      <div class="video-grid">
+        <div class="video-placeholder">
+          <div class="video-placeholder__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <p data-i18n="content.video1">IA Generativa no Varejo — Palestra completa</p>
         </div>
-
-        <div class="skill__group">
-          <h3>Product & Design</h3>
-          <ul>
-            <li>Digital product strategy & roadmap</li>
-            <li>Customer research & journey mapping</li>
-            <li>NPS, CSAT, Voice of the Customer programs</li>
-            <li>Design Sprint methodology</li>
-            <li>Live commerce & social commerce</li>
-            <li>Omnichannel & phygital retail</li>
-          </ul>
+        <div class="video-placeholder">
+          <div class="video-placeholder__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <p data-i18n="content.video2">Customer Experience como vantagem competitiva</p>
         </div>
-
-        <div class="skill__group">
-          <h3>Leadership & Management</h3>
-          <ul>
-            <li>Large-scale tech org leadership (70+ engineers)</li>
-            <li>Agile / Scrum / PDCA</li>
-            <li>DORA metrics & observability</li>
-            <li>FinOps & cloud cost optimization</li>
-            <li>OKR-driven execution</li>
-            <li>Talent sculpting & team building</li>
-          </ul>
+        <div class="video-placeholder">
+          <div class="video-placeholder__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <p data-i18n="content.video3">D2C e novos modelos de negócio digital</p>
         </div>
-
-        <div class="skill__group">
-          <h3>Languages</h3>
-          <ul>
-            <li>Portuguese — Native</li>
-            <li>English — Fluent</li>
-            <li>Exchange: Chicago, IL — Kaplan IIT (2014)</li>
-            <li>Exchange: London, UK — Kaplan Business (2013)</li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section section--contact" id="contact">
-    <div class="container contact__inner">
-      <p class="section__label">Contact</p>
-      <h2 class="section__title">Let's talk</h2>
-      <p class="contact__sub">
-        Open to conversations about technology leadership, digital transformation,<br class="br-lg" />
-        AI in retail, and academic collaboration.
-      </p>
-      <div class="contact__links">
-        <a href="mailto:welljose@gmail.com" class="contact__link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          welljose@gmail.com
-        </a>
-        <a href="tel:+5511999095603" class="contact__link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
-          +55 11 9 9909 5603
-        </a>
-        <a href="https://linkedin.com/in/welljose" target="_blank" rel="noopener" class="contact__link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          linkedin.com/in/welljose
-        </a>
+  <!-- CONTATO -->
+  <section class="section section--contact" id="contato">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="section__label" data-i18n="contact.label">Contato</p>
+          <h2 class="section__title" data-i18n="contact.title">Vamos conversar!</h2>
+          <p class="contact__sub" data-i18n="contact.sub">Aberto a oportunidades em liderança, produtos digitais, experiência do cliente, palestras e colaborações acadêmicas.</p>
+          <div class="contact__links">
+            <a href="mailto:welljose@gmail.com" class="contact__link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              welljose@gmail.com
+            </a>
+            <a href="tel:+5511999095603" class="contact__link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+              +55 11 9 9909 5603
+            </a>
+            <a href="https://linkedin.com/in/welljose" target="_blank" rel="noopener" class="contact__link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/welljose
+            </a>
+          </div>
+          <p class="contact__location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Vila Mariana, São Paulo — SP, Brasil
+          </p>
+        </div>
+        <div class="contact__form-wrap">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__group">
+              <label for="name" data-i18n="form.name">Seu nome</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="form__group">
+              <label for="company" data-i18n="form.company">Empresa</label>
+              <input type="text" id="company" name="company" autocomplete="organization" />
+            </div>
+            <div class="form__group">
+              <label for="email" data-i18n="form.email">E-mail para retorno</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+            <div class="form__group">
+              <label for="phone" data-i18n="form.phone">Telefone de contato</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" />
+            </div>
+            <div class="form__check">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent" data-i18n="form.consent">Concordo em receber retorno do Wellington para tratar de consultoria e educação.</label>
+            </div>
+            <button type="submit" class="btn btn--primary form__submit" data-i18n="form.submit">Receber Contato</button>
+            <p class="form__success" id="formSuccess" data-i18n="form.success">Mensagem enviada! Wellington entrará em contato em breve.</p>
+          </form>
+        </div>
       </div>
-      <p class="contact__location">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Vila Mariana, São Paulo — SP, Brazil
-      </p>
     </div>
   </section>
 
@@ -335,7 +363,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <p>&copy; 2025 Wellington Silva · welljose.net</p>
-      <p>Digitally native since 1997.</p>
+      <p data-i18n="footer.since">Digitalmente nativo desde 1997.</p>
     </div>
   </footer>
 
